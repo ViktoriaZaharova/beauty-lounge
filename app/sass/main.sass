@@ -113,7 +113,7 @@ input
   width: 100%
   color: #000000
   padding: 0 29px
-  font-size: 18px
+  font-size: 16px
   font-weight: 500
   &::placeholder
     color: #000
@@ -126,7 +126,7 @@ form
   button, .btn
     width: 100%
     height: 84px
-    font-size: 18px
+    font-size: 16px
 
 .container
   max-width: 1400px
@@ -187,23 +187,35 @@ form
   align-items: center
   justify-content: center
   margin: 0 auto
+  .logo
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 82px
+    height: 47px
+    &:last-child
+      width: 94px
 
 .text-x
   margin: 0 27px
-  font-size: 36px
+  font-size: 32px
   font-weight: 500
   color: $accent
 
 h1
-  font-size: 36px
+  font-size: 32px
   max-width: 802px
   width: 100%
+  font-family: $font
+  font-weight: 300
 
 h2
   position: relative
   text-align: center
-  font-size: 36px
+  font-size: 32px
   width: 100%
+  font-family: $font
+  font-weight: 300
 
   span
     position: relative
@@ -260,7 +272,7 @@ header
         color: $accent
 
 main
-  padding: 50px 0 0
+  padding: 50px 0 30px
   background: #f6f5f9
   position: relative
 
@@ -277,21 +289,21 @@ main
     position: relative
 
   .box-text
-    margin: 26px 0 30px
+    margin: 40px 0 60px
     color: #3a3a3a
-    font-size: 24px
+    font-size: 16px
     max-width: 630px
     width: 100%
 
   .btn
-    max-width: 420px
+    max-width: 306px
 
 .main-img
-  margin: 0 0 30px
+  margin: 0 0 50px
   box-shadow: 0 11px 9px 0 rgba(0, 0, 0, 0.07)
 
 .main-images
-  margin: 0 0 -30px 73px
+  margin: 20px 0 -80px 73px
   position: relative
   max-width: 591px
   width: 100%
@@ -317,6 +329,10 @@ main
 .main-content
   position: relative
   z-index: 1
+  h3
+    font-weight: 500
+    margin: 10px 0 20px
+    text-transform: uppercase
 
 //.revolution
 .revolution
@@ -334,7 +350,7 @@ main
   h3
     margin: 0 0 13px
     color: $accent
-    font-size: 18px
+    font-size: 16px
     font-weight: 500
 
 
@@ -357,6 +373,7 @@ main
   max-width: 410px
   width: 100%
   font-weight: 300
+  line-height: 1.2
 
   &:before
     content: ''
@@ -395,7 +412,7 @@ main
   flex-wrap: wrap
   justify-content: space-between
   align-items: stretch
-  font-size: 18px
+  font-size: 16px
   font-weight: 500
   color: $text
   margin: 33px 0 0
@@ -423,7 +440,7 @@ main
   justify-content: flex-start
   margin: 0 0 34px
   color: $text
-  font-size: 18px
+  font-size: 16px
   width: 32%
 
 .advantages-box__icon
@@ -445,7 +462,7 @@ main
   color: #fff
   margin: 36px auto -39px
   padding: 20px
-  font-size: 18px
+  font-size: 16px
 
   p
     max-width: 1100px
@@ -508,7 +525,7 @@ main
   height: 50px
   text-align: center
   background: $accent
-  font-size: 30px
+  font-size: 26px
   font-weight: bold
   color: #fff
   display: flex
@@ -533,7 +550,7 @@ main
 .list-price
   width: 100%
   margin: 15px 0 0
-  font-size: 30px
+  font-size: 26px
   font-weight: bold
   color: #3a3a3a
 
@@ -556,7 +573,7 @@ main
   color: $accent
 
 .old-price
-  font-size: 24px
+  font-size: 20px
   margin: 0 17px 0 0
   text-decoration: line-through
 
@@ -657,7 +674,7 @@ main
   text-align: center
 
 .masters-card__name
-  font-size: 24px
+  font-size: 20px
   margin: 0 auto 18px
   font-weight: bold
   line-height: 1
@@ -711,7 +728,7 @@ main
   font-size: 14px
 
 .articles-box__cat
-  font-size: 18px
+  font-size: 16px
   font-weight: 500
   margin: 0 0 13px
   color: #3a3a3a
@@ -721,7 +738,7 @@ main
   max-width: 230px
   width: 100%
   color: #3a3a3a
-  font-size: 18px
+  font-size: 16px
   font-weight: 500
 
 .articles-box__text
