@@ -307,7 +307,7 @@ header {
     .menu li:last-child {
       margin: 0; }
     .menu li a {
-      font-size: 14px;
+      font-size: 12px;
       text-transform: uppercase;
       font-weight: 300;
       color: #1e1e1e; }

@@ -86,3 +86,23 @@ $('.btn-view').click(function (e){
     $(this).siblings('.advantages-wrapper').find('.advantages-box:hidden').css('display', 'flex');
     $(this).hide();
 });
+
+//плавный скролл
+$(document).ready(function () { //плавный скролл
+    $(".go_to").on("click", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+
+        //забираем идентификатор бока с атрибута href
+        let id = $(this).attr('href'),
+
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+
+        let headerHeight = $('header').height();
+
+        //анимируем переход на расстояние - top за 500 мс
+        $('body,html').animate({scrollTop: top - headerHeight}, 500);
+    });
+});
+//плавный скролл end
