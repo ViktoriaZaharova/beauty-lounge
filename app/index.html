@@ -17,9 +17,6 @@
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
-          rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -30,11 +27,7 @@
 
 <div class="mobile-menu">
     <div class="btn-close"><img src="img/close.svg" alt=""></div>
-    <div class="logo-group">
-        <a href="/" class="logo"><img src="img/logo1.svg" alt=""></a>
-        <div class="text-x">x</div>
-        <a href="/" class="logo"><img src="img/logo2.svg" alt=""></a>
-    </div>
+
     <ul class="menu">
         <li><a href="#">УСЛУГА</a></li>
         <li><a href="#">ПРЕИМУЩЕСТВА</a></li>
@@ -89,7 +82,23 @@
                 <p>На аппарате Beautylizer Therapy Cosmospheres </p>
             </div>
 
-            <img src="img/img1.jpg" alt="" class="main-img">
+            <div class="main-without">
+                <h4>Без:</h4>
+                <ul>
+                    <li>
+                        <div class="icon"><img src="img/main-icon1.png" alt=""></div>
+                        <p>боли</p>
+                    </li>
+                    <li>
+                        <div class="icon"><img src="img/main-icon2.png" alt=""></div>
+                        <p>реабилитации</p>
+                    </li>
+                    <li>
+                        <div class="icon"><img src="img/main-icon3.png" alt=""></div>
+                        <p>гематом (синяков)</p>
+                    </li>
+                </ul>
+            </div>
 
             <h3>Ваша новая фигура за 10 процедур!</h3>
             <a href="#modal-call" class="btn btn-accent open_modal">Получить консультацию</a>
@@ -113,7 +122,7 @@
     <div class="wrapper">
         <div class="container">
             <div class="revolution-box revolution-box-left">
-                <p>RSL-СКУЛЬПТУРИРОВАНИЕ сочетает в себе метод роллерной виброкомпрессии сферами и светодиодной
+                <p><strong>RSL-СКУЛЬПТУРИРОВАНИЕ</strong> сочетает в себе метод роллерной виброкомпрессии сферами и светодиодной
                     LED-терапии.Красный свет проникает в слои кожи на глубину 4–5 мм и ускоряет обмен веществ и
                     циркуляцию крови, насыщая клетки кислородом и питательными компонентами; стимулирует выработку
                     коллагена и эластина; кожа становится более упругой, эластичность кожи повышается до 19%. Согласно
@@ -172,82 +181,88 @@
                 <p>Для всех, кто старше 18 лет</p>
             </li>
         </ul>
+
+        <a href="#" class="btn btn-accent btn-view">Показать все</a>
     </div>
 </section>
 
 <section class="advantages">
     <div class="container">
-        <h2><span>Преимущества</span></h2>
+        <div class="advantages-section-col">
+            <h2><span>Преимущества</span></h2>
 
-        <div class="advantages-wrapper">
-            <div class="advantages-box">
-                <div class="advantages-box__icon"><img src="img/icon1.png" alt=""></div>
-                <div class="advantages-box__content">
-                    <p>Кратковременная компрессия и подъем кожи создают эффект «сосудистой
-                        гимнастики», восстанавливают микроциркуляцию и обеспечивают
-                        усиление кровотока, эффективно решая проблемы флебологии.
-                        Разрешено при варикозе!</p>
+            <div class="advantages-wrapper">
+                <div class="advantages-box">
+                    <div class="advantages-box__icon"><img src="img/icon1.png" alt=""></div>
+                    <div class="advantages-box__content">
+                        <p>Кратковременная компрессия и подъем кожи создают эффект «сосудистой
+                            гимнастики», восстанавливают микроциркуляцию и обеспечивают
+                            усиление кровотока, эффективно решая проблемы флебологии.
+                            Разрешено при варикозе!</p>
+                    </div>
+                </div>
+                <div class="advantages-box">
+                    <div class="advantages-box__icon"><img src="img/icon2.png" alt=""></div>
+                    <div class="advantages-box__content">
+                        <p>Механическое воздействие аппарата создает эффект пилинга, мягко
+                            отшелушивая ороговевшие частицы по всей поверхности тела. </p>
+                    </div>
+                </div>
+                <div class="advantages-box">
+                    <div class="advantages-box__icon"><img src="img/icon3.png" alt=""></div>
+                    <div class="advantages-box__content">
+                        <p>Высокая частота вращения позволяет прорабатывать глубокие мышцы
+                            тела, а эффект от процедуры сопоставим с интенсивной тренировкой
+                            в тренажерном зале.</p>
+                    </div>
+                </div>
+                <div class="advantages-box align-center">
+                    <div class="advantages-box__icon"><img src="img/icon4.png" alt=""></div>
+                    <div class="advantages-box__content">
+                        <p>Уменьшается отёчность и выводится лишняя жидкость (лифмодренаж).</p>
+                    </div>
+                </div>
+                <div class="advantages-box align-center">
+                    <div class="advantages-box__icon"><img src="img/icon5.png" alt=""></div>
+                    <div class="advantages-box__content">
+                        <p>Запускается детоксикация организма.</p>
+                    </div>
+                </div>
+                <div class="advantages-box align-center">
+                    <div class="advantages-box__icon"><img src="img/icon6.png" alt=""></div>
+                    <div class="advantages-box__content">
+                        <p>Коррекция стрий (растяжек).</p>
+                    </div>
+                </div>
+                <div class="advantages-box">
+                    <div class="advantages-box__icon"><img src="img/icon7.png" alt=""></div>
+                    <div class="advantages-box__content">
+                        <p>Седативное воздействие на нервную систему, улучшение сна, нормализация психоэмоционального
+                            состояния.</p>
+                    </div>
+                </div>
+                <div class="advantages-box align-center">
+                    <div class="advantages-box__icon"><img src="img/icon8.png" alt=""></div>
+                    <div class="advantages-box__content">
+                        <p>Расслабляющее действие на мышцы, снятие мышечных спазмы
+                            и зажимов.</p>
+                    </div>
+                </div>
+                <div class="advantages-box align-center">
+                    <div class="advantages-box__icon"><img src="img/icon9.png" alt=""></div>
+                    <div class="advantages-box__content">
+                        <p>Происходит нормализация клеточного метаболизма.</p>
+                    </div>
                 </div>
             </div>
-            <div class="advantages-box">
-                <div class="advantages-box__icon"><img src="img/icon2.png" alt=""></div>
-                <div class="advantages-box__content">
-                    <p>Механическое воздействие аппарата создает эффект пилинга, мягко
-                        отшелушивая ороговевшие частицы по всей поверхности тела. </p>
-                </div>
-            </div>
-            <div class="advantages-box">
-                <div class="advantages-box__icon"><img src="img/icon3.png" alt=""></div>
-                <div class="advantages-box__content">
-                    <p>Высокая частота вращения позволяет прорабатывать глубокие мышцы
-                        тела, а эффект от процедуры сопоставим с интенсивной тренировкой
-                        в тренажерном зале.</p>
-                </div>
-            </div>
-            <div class="advantages-box">
-                <div class="advantages-box__icon"><img src="img/icon4.png" alt=""></div>
-                <div class="advantages-box__content">
-                    <p>Уменьшается отёчность и выводится лишняя жидкость (лифмодренаж).</p>
-                </div>
-            </div>
-            <div class="advantages-box">
-                <div class="advantages-box__icon"><img src="img/icon5.png" alt=""></div>
-                <div class="advantages-box__content">
-                    <p>Запускается детоксикация организма.</p>
-                </div>
-            </div>
-            <div class="advantages-box">
-                <div class="advantages-box__icon"><img src="img/icon6.png" alt=""></div>
-                <div class="advantages-box__content">
-                    <p>Коррекция стрий (растяжек).</p>
-                </div>
-            </div>
-            <div class="advantages-box">
-                <div class="advantages-box__icon"><img src="img/icon7.png" alt=""></div>
-                <div class="advantages-box__content">
-                    <p>Седативное воздействие на нервную систему, улучшение сна, нормализация психоэмоционального
-                        состояния.</p>
-                </div>
-            </div>
-            <div class="advantages-box">
-                <div class="advantages-box__icon"><img src="img/icon8.png" alt=""></div>
-                <div class="advantages-box__content">
-                    <p>Расслабляющее действие на мышцы, снятие мышечных спазмы
-                        и зажимов.</p>
-                </div>
-            </div>
-            <div class="advantages-box">
-                <div class="advantages-box__icon"><img src="img/icon9.png" alt=""></div>
-                <div class="advantages-box__content">
-                    <p>Происходит нормализация клеточного метаболизма.</p>
-                </div>
-            </div>
-        </div>
 
-        <div class="technology">
-            <p>Технология RSL-SCULPTING воздействует не только локально на проблемные участки тела, но и на общее
-                состояние организма (повышается иммунитет, нормализуется функция щитовидной железы, надпочечников и
-                др.).</p>
+            <a href="#" class="btn btn-accent btn-view">Показать все</a>
+
+            <div class="technology">
+                <p>Технология RSL-SCULPTING воздействует не только локально на проблемные участки тела, но и на общее
+                    состояние организма (повышается иммунитет, нормализуется функция щитовидной железы, надпочечников и
+                    др.).</p>
+            </div>
         </div>
     </div>
 </section>
@@ -311,7 +326,8 @@
 
     <div class="price-section-wrapper">
         <div class="container">
-            <a href="#modal-call" class="btn btn-accent open_modal">Ваша новая фигура за 10 процедур!</a>
+            <h3>Ваша новая фигура за 10 процедур!</h3>
+            <a href="#modal-call" class="btn btn-accent open_modal">Записаться на прием</a>
         </div>
     </div>
 </section>
@@ -381,7 +397,6 @@
                     <div class="date">26 НОЯБРЯ 2020</div>
                     <a href="#" class="articles-box__title">Дарим подарки в честь 10
                         летия салона</a>
-                    <div class="date">26 НОЯБРЯ 2020</div>
 
                     <div class="articles-box__text">
                         <p>Безиньекционная и безоперационная подтяжка лица / Биоревитализационное омоложение /
@@ -397,7 +412,6 @@
                     <div class="date">26 НОЯБРЯ 2020</div>
                     <a href="#" class="articles-box__title">Дарим подарки в честь 10
                         летия салона</a>
-                    <div class="date">26 НОЯБРЯ 2020</div>
 
                     <div class="articles-box__text">
                         <p>Безиньекционная и безоперационная подтяжка лица / Биоревитализационное омоложение /
@@ -413,7 +427,6 @@
                     <div class="date">26 НОЯБРЯ 2020</div>
                     <a href="#" class="articles-box__title">АКЦИИ, КРАСОТА
                     </a>
-                    <div class="date">26 НОЯБРЯ 2020</div>
 
                     <div class="articles-box__text">
                         <p>Безиньекционная и безоперационная подтяжка лица / Биоревитализационное омоложение /
@@ -429,7 +442,6 @@
                     <div class="date">26 НОЯБРЯ 2020</div>
                     <a href="#" class="articles-box__title">АКЦИИ, КРАСОТА
                     </a>
-                    <div class="date">26 НОЯБРЯ 2020</div>
 
                     <div class="articles-box__text">
                         <p>Безиньекционная и безоперационная подтяжка лица / Биоревитализационное омоложение /
@@ -443,8 +455,7 @@
 
 <footer>
     <div class="container">
-        <div class="copyright">©COPYRIGHT 2020. BEAUTY LOUNGE SALON & BOUTIQUE. ООО "Массон и Харебов". Powered by Jr.
-        </div>
+        <div class="copyright">©COPYRIGHT 2020. BEAUTY LOUNGE SALON & BOUTIQUE. Powered by Jr.</div>
     </div>
 </footer>
 

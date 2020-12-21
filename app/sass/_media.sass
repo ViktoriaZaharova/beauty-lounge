@@ -19,7 +19,7 @@
     margin: 0 0 -30px auto
 
   main
-    padding: 50px 0
+    padding: 100px 0 50px
 
   .menu li
     margin: 0 15px 0 0
@@ -96,6 +96,9 @@
   .gallery
     padding: 70px 0
 
+  .advantages-section-col
+    &:before, &:after
+      height: calc(100% - 19px)
 
 @media only screen and (max-width : 992px)
   .main-images
@@ -124,7 +127,7 @@
     br
       display: none
 
-  .main-img
+  .main-without
     margin: 0 0 30px
 
   .btn
@@ -188,6 +191,16 @@
   .copyright
     line-height: 1.4
 
+  h2
+    span
+      padding: 0 20px
+
+  .revolution
+    h2
+      span
+        max-width: 87%
+        margin: 0 auto
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
   h1
@@ -243,22 +256,39 @@
   .articles-box
     margin: 0 20px 40px 0
 
+  .advantages-section-col
+    &:before, &:after
+      height: calc(100% - 12px)
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 575px)
   .for-whom-list li
     width: 100%
     padding: 15px
+    display: none
+    &:nth-child(-n+3)
+      display: flex
+
+  .btn-view
+    display: flex
 
   .icon-check
     width: 25px
     min-width: 25px
     margin: 0 10px 0 0
 
+  .advantages
+    .btn-view
+      margin: 0 auto 30px
+
   .advantages-box
     width: 100%
     align-items: center
+    display: none
     &:first-child, &:nth-child(2), &:nth-child(3), &:nth-child(7)
       order: 1
+    &:nth-child(-n+3)
+      display: flex
 
   .advantages-box__icon
     margin: 0 20px 0 0
@@ -303,8 +333,11 @@
     &:before, &:after
       width: 60px
 
-  .main-img
+  .main-without
     max-width: 180px
+    font-size: 12px
+    h4
+      font-size: 16px
 
   .main-content h3
     margin: 40px 0 30px
@@ -317,6 +350,22 @@
 
   .masters-card__body
     padding: 15px
+
+  .advantages-wrapper
+    padding: 0 15px
+
+  header
+    .container
+      justify-content: space-between
+      position: relative
+    .btn
+      margin: 0 -15px 0 0
+
+  .btn-burger
+    width: 75px
+    align-items: flex-start
+    span
+      width: 20px
 
 @media only screen and (max-width : 480px)
   .logo
@@ -342,6 +391,56 @@
   .masters-card__photo
     height: 250px
 
+  main .box-text, .revolution-box, .articles-box__cat, .articles-box__title
+    font-size: 14px
+
+  .articles-box__title
+    margin: 10px 0
+
+  .articles-box__text
+    line-height: 1.15
+
+  main
+    padding: 90px 0 10px
+
+  .for-whom-list li
+    padding: 5px 10px
+
+  .revolution
+    padding: 30px 0
+
+  .advantages-box
+    margin: 0 0 15px
+
+  .result
+    padding: 70px 0 0
+
+  .price-section
+    padding: 40px 0 0
+
+  .list-price li
+    padding: 15px 0
+
+  .price-section-wrapper
+    margin: 20px 0 0
+    h3
+      font-size: 16px
+
+  .masters-wrapper
+    margin: 30px 0 0
+
+  .masters
+    padding: 0 0 30px
+
+  .copyright
+    padding: 20px 0
+
+  .articles-box
+    margin: 0 10px 30px 0
+
+  .articles-box__img
+    height: 180px
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 420px)
   .list-price p
@@ -352,14 +451,22 @@
     display: none
 
   .main-images
-    max-width: 160px
+    max-width: 140px
     right: 10px
     &:before, &:after
       width: 40px
       top: 30px
 
-  .main-img
-    max-width: 120px
+  .main-without
+    max-width: 150px
+    margin: 0 0 30px 10px
+    h4
+      font-size: 14px
+    ul li
+      .icon
+        width: 30px
+        height: 30px
+        min-width: 30px
 
   .masters-card
     font-size: 14px
@@ -369,3 +476,29 @@
 
   .masters-card__name
     font-size: 16px
+
+  header .btn
+    max-width: 70px
+    font-size: 8px
+
+  .btn-burger
+    width: 55px
+
+  h2
+    font-size: 16px
+    span
+      padding: 0 10px
+
+  .advantages-section-col
+    &:before, &:after
+      height: calc(100% - 10px)
+
+  .articles-box__text
+    font-size: 12px
+
+@media only screen and (max-width : 370px)
+  .main-without
+    max-width: 140px
+
+  .main-images
+    bottom: 180px

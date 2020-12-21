@@ -115,6 +115,7 @@ input
   padding: 0 29px
   font-size: 16px
   font-weight: 500
+
   &::placeholder
     color: #000
 
@@ -187,12 +188,14 @@ form
   align-items: center
   justify-content: center
   margin: 0 auto
+
   .logo
     display: flex
     align-items: center
     justify-content: center
     width: 82px
     height: 47px
+
     &:last-child
       width: 94px
 
@@ -203,23 +206,22 @@ form
   color: $accent
 
 h1
-  font-size: 32px
+  font-size: 35px
   max-width: 802px
   width: 100%
-  font-family: $font
   font-weight: 300
 
 h2
   position: relative
   text-align: center
-  font-size: 32px
+  font-size: 25px
   width: 100%
-  font-family: $font
   font-weight: 300
+  color: #9e0b0b
 
   span
     position: relative
-    padding: 0 27px
+    padding: 0 40px
     background: #fff
     display: inline-block
     margin: 0 auto
@@ -232,16 +234,23 @@ h2
     transform: translate(0, -50%)
     background: $accent
     width: 100%
-    height: 2px
+    height: 1px
 
 .color-accent
   color: $accent
 
 //header
 header
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 3
   background: #fff
+
   .container
     align-items: center
+
   .btn
     padding: 18px
     max-width: 135px
@@ -272,7 +281,7 @@ header
         color: $accent
 
 main
-  padding: 50px 0 30px
+  padding: 115px 0 30px
   background: #f6f5f9
   position: relative
 
@@ -285,6 +294,7 @@ main
     height: 213px
     background: url("../img/decor1.png") no-repeat center
       size: 100%
+
   > *
     position: relative
 
@@ -298,12 +308,44 @@ main
   .btn
     max-width: 306px
 
+.main-without
+  box-shadow: 0 11px 9px 0 rgba(0, 0, 0, 0.07)
+  margin: 0 0 50px
+  background: #fff
+  padding: 20px 10px
+  max-width: 225px
+  width: 100%
+  color: $text
+  h4
+    color: $accent
+    font-size: 24px
+    margin: 0 0 15px 10px
+  ul
+    li
+      display: flex
+      align-items: center
+      margin: 0 0 10px
+      &:last-child
+        margin: 0
+      .icon
+        width: 52px
+        height: 52px
+        min-width: 52px
+        border-radius: 50%
+        margin: 0 10px 0 0
+
+.btn-view
+  max-width: 260px
+  margin: 0 auto
+  width: 100%
+  display: none
+
 .main-img
   margin: 0 0 50px
   box-shadow: 0 11px 9px 0 rgba(0, 0, 0, 0.07)
 
 .main-images
-  margin: 20px 0 -80px 73px
+  margin: 20px 0 -80px auto
   position: relative
   max-width: 591px
   width: 100%
@@ -329,6 +371,7 @@ main
 .main-content
   position: relative
   z-index: 1
+
   h3
     font-weight: 500
     margin: 10px 0 20px
@@ -341,7 +384,7 @@ main
 
   .wrapper
     margin: 36px 0 0
-    background: #e9eaeb
+    //background: #e9eaeb
 
     .container
       align-items: stretch
@@ -353,12 +396,14 @@ main
     font-size: 16px
     font-weight: 500
 
+  strong
+    font-weight: bold
 
 .revolution-box-img
   display: flex
   align-items: center
   justify-content: center
-  max-width: 408px
+  max-width: 358px
   width: 100%
 
   img
@@ -370,7 +415,7 @@ main
   padding: 23px 43px 23px 0
   color: #fff
   position: relative
-  max-width: 410px
+  max-width: 460px
   width: 100%
   font-weight: 300
   line-height: 1.2
@@ -403,8 +448,6 @@ main
   p
     margin: 0 0 48px
 
-  strong
-    font-weight: bold
 
 //for-whom
 .for-whom-list
@@ -418,9 +461,10 @@ main
   margin: 33px 0 0
 
   li
+    border-bottom: 1px solid #b6b7b8
     margin: 0 0 15px
     width: 48.5%
-    background: #e9eaeb
+    //background: #e9eaeb
     display: flex
     align-items: center
     padding: 20px 25px
@@ -430,9 +474,32 @@ main
   width: 39px
   min-width: 39px
 
+.slick-slide
+  outline: none
+
 //advantages
 .advantages
   padding: 85px 0 0
+
+.advantages-section-col
+  position: relative
+  border-bottom: 1px solid $accent
+  display: flex
+  flex-direction: column
+
+  &:before, &:after
+    content: ''
+    position: absolute
+    width: 1px
+    background: $accent
+    height: calc(100% - 16px)
+    bottom: 0
+
+  &:before
+    left: 0
+
+  &:after
+    right: 0
 
 .advantages-box
   display: flex
@@ -442,6 +509,9 @@ main
   color: $text
   font-size: 16px
   width: 32%
+
+.align-center
+  align-items: center
 
 .advantages-box__icon
   width: 63px
@@ -456,6 +526,7 @@ main
   justify-content: space-between
   flex-wrap: wrap
   margin: 33px 0 0
+  padding: 0 30px
 
 .technology
   background: $accent
@@ -474,12 +545,12 @@ main
 .result
   padding: 126px 0
 
-.bg-grey
-  background: #e9eaeb
-
-  h2
-    span
-      background: #e9eaeb
+//.bg-grey
+//  background: #e9eaeb
+//
+//  h2
+//    span
+//      background: #e9eaeb
 
 .result-wrapper
   display: flex
@@ -545,7 +616,7 @@ main
 
 //.price-section
 .price-section
-  padding: 100px 0
+  padding: 50px 0
 
 .list-price
   width: 100%
@@ -580,6 +651,16 @@ main
 .price-section-wrapper
   position: relative
   margin: 65px 0 0
+
+  .container
+    flex-direction: column
+    align-items: center
+
+  h3
+    text-align: center
+    font-weight: 500
+    font-size: 18px
+    margin: 0 auto 10px
 
   .btn
     margin: 0 auto
@@ -690,6 +771,7 @@ main
     width: 160px
     height: 309px
     z-index: 1
+
   &:before
     left: 0
     background: url("../img/decor3.png") no-repeat center
@@ -706,6 +788,7 @@ main
   color: #3a3a3a
   font-size: 14px
   margin: 0 0 60px
+  outline: none
 
 .articles-box__img
   height: 226px
@@ -748,7 +831,7 @@ main
 //footer
 .copyright
   padding: 24px 0
-  border-top: 2px solid $accent
+  border-top: 1px solid $accent
   width: 100%
   text-align: center
 
@@ -771,16 +854,17 @@ main
   width: 100%
   position: fixed
   z-index: 5
-  height: 100%
-  overflow-y: auto
   padding: 30px 20px
   background: #fff
   box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.18)
+
   .menu
     flex-direction: column
     margin: 20px 0 0
+
     li
       margin: 0 0 10px
+
       a
         font-size: 16px
 
@@ -790,7 +874,7 @@ main
   display: flex
   align-items: center
   cursor: pointer
-  margin: 0 0 20px auto
+  margin: 0 0 20px
 
 //modal
 .modal__div
@@ -808,8 +892,10 @@ main
   flex-direction: column
   display: none
   opacity: 0
+
   h2
     margin: 0 auto 40px
+
     &:before
       display: none
 
@@ -841,7 +927,7 @@ main
   background-color: #000
   opacity: 0.8
   -moz-opacity: 0.8
-  filter: alpha(opacity = 80)
+  filter: alpha(opacity=80)
   width: 100%
   height: 100%
   top: 0

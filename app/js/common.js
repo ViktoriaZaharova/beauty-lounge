@@ -15,11 +15,11 @@ $(document).ready(function() {
 
 
 $('.btn-burger').click(function (){
-   $('.mobile-menu').fadeToggle();
+   $('.mobile-menu').slideToggle();
 });
 
 $('.btn-close').click(function (){
-    $('.mobile-menu').fadeOut();
+    $('.mobile-menu').slideUp();
 });
 
 // модальные окна (несколько)
@@ -65,13 +65,24 @@ $(window).on('load resize', function() {
         $('.articles-slider:not(.slick-initialized)').slick({
             dots: false,
             infinite: true,
-            slidesToShow: 1,
+            slidesToShow: 2,
             arrows: false,
-            variableWidth: true,
-            autoplay: true
+            // autoplay: true
         });
     } else {
         $(".articles-slider.slick-initialized").slick("unslick");
     }
 });
 // slick active
+
+$('.btn-view').click(function (e){
+    e.preventDefault();
+    $(this).siblings('.for-whom-list').find('li:hidden').css('display', 'flex');
+    $(this).hide();
+});
+
+$('.btn-view').click(function (e){
+    e.preventDefault();
+    $(this).siblings('.advantages-wrapper').find('.advantages-box:hidden').css('display', 'flex');
+    $(this).hide();
+});
