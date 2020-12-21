@@ -961,7 +961,7 @@ main {
 
 .mobile-menu {
   display: none;
-  max-width: 280px;
+  max-width: 200px;
   width: 100%;
   position: fixed;
   z-index: 5;
@@ -980,7 +980,8 @@ main {
     .mobile-menu .menu li {
       margin: 0 0 10px; }
       .mobile-menu .menu li a {
-        font-size: 16px; }
+        font-size: 12px;
+        font-weight: 100; }
 
 .phone-wrapper {
   width: 100%;
@@ -1000,11 +1001,12 @@ main {
           align-items: center;
   color: #ee443c;
   margin: 0 0 15px;
-  font-weight: 500; }
+  font-weight: 100;
+  font-size: 12px; }
 
 .phone-icon {
   margin: 0 5px 0 0;
-  width: 20px; }
+  width: 15px; }
 
 .btn-close {
   width: 20px;
@@ -1042,6 +1044,7 @@ main {
   display: none;
   opacity: 0; }
   .modal__div .phone {
+    font-size: 14px;
     max-width: 170px;
     margin: 0 auto 15px; }
   .modal__div h2 {
