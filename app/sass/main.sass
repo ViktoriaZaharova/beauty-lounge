@@ -854,10 +854,11 @@ main
   width: 100%
   position: fixed
   z-index: 5
-  padding: 30px 20px
+  padding: 24px 20px 30px
   background: #fff
   box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.18)
-
+  top: 0
+  left: 0
   .menu
     flex-direction: column
     margin: 20px 0 0
@@ -867,6 +868,27 @@ main
 
       a
         font-size: 16px
+
+.phone-wrapper
+  width: 100%
+  margin: 20px 0 0
+  text-align: center
+  h3
+
+    font-weight: 500
+    margin: 0 0 15px
+    font-size: 16px
+
+.phone
+  display: flex
+  align-items: center
+  color: $accent
+  margin: 0 0 15px
+  font-weight: 500
+
+.phone-icon
+  margin: 0 5px 0 0
+  width: 20px
 
 .btn-close
   width: 20px
@@ -892,7 +914,9 @@ main
   flex-direction: column
   display: none
   opacity: 0
-
+  .phone
+    max-width: 170px
+    margin: 0 auto 15px
   h2
     margin: 0 auto 40px
 
